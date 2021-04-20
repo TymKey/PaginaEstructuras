@@ -6,41 +6,190 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Estructuras</title>
+    <link rel="icon" type="image/png" href="/imagenes/computadora.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color:#f0f0f0;">
     <div class="container-fluid"><br>
-        <h1 class="text-center">Algoritmos de Búsqueda y Ordenamiento</h1><br>
+        <h1><span class="badge bg-dark">Algoritmos de Búsqueda y Ordenamiento</span></h1><br>
+
         <h4>Algoritmos de Búsqueda</h4>
         <ul class="list-group">
             <li>» Búsqueda Secuencial</li>
             <li>» Búsqueda Binaria</li>
-            <li>» Búsqueda Hashing</li>
-        </ul><br>
+        </ul>
+        <hr>
         <h4>Algoritmos de Ordenamiento</h4>
         <ul class="list-group">
             <li>» Ordenamiento de Burbuja</li>
             <li>» Ordenamiento por Inserción</li>
             <li>» Ordenamiento por Selección</li>
-            <li>» Ordenamiento con árbol binario</li>
             <li>» Ordenamiento Shell</li>
-            <li>» Ordenamiento rápido</li>
-            <li>» Ordenamiento por montículos</li>
-        </ul><br>
-        <h4 class="text-center">Búsqueda Secuencial</h4><br>
-        <p class="text-start">Su principal funcionamiento consite en ir comparando
-            el elemento que se esta buscando con cada elemento del arreglo, hasta que lo encuentra.
-        </p><br>
-        
-        
-        
-        
-        <h4 class="text-center">Búsqueda Binaria</h4><br>
-        <p class="text-start">Su principal funcionamiento consite en ir comparando
-            el elemento que se esta buscando con cada elemento del arreglo, hasta que lo encuentra.
-        </p><br>
+        </ul>
+        <hr><br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <h1><span class="badge rounded-pill bg-dark">Algoritmos de Búsqueda</span></h1><br>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingO">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseO" aria-expanded="true" aria-controls="collapseO">
+                                    Búsqueda Secuencial
+                                </button>
+                            </h2>
+                            <div id="collapseO" class="accordion-collapse collapse show" aria-labelledby="headingO"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Su principal funcionamiento consiste en ir comparando
+                                        el elemento que se esta buscando con cada elemento del arreglo, hasta que lo
+                                        encuentra.</p>
+                                    <img src="imagenes/BusquedaSecuencial.gif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingT">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseT" aria-expanded="false" aria-controls="collapseT">
+                                    Ordenamiento de Burbuja
+                                </button>
+                            </h2>
+                            <div id="collapseT" class="accordion-collapse collapse" aria-labelledby="headingT"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Su Funcionamiento consiste en repetir un ciclo a través de la lista, comparando
+                                        elementos
+                                        adyacentes
+                                        de dos en dos. Si el elemento es mayor que el que está en la siguiente posición
+                                        se
+                                        intercambian.
+                                    </p>
+                                    <img src="imagenes/Burbuja.gif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h1><span class="badge rounded-pill bg-dark">Algoritmos de Ordenamiento</span></h1><br>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Búsqueda Secuencial
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-start">
+                                        Se toma el dato que esta en la primera casilla y la comparo con la segunda
+                                        casilla: si es
+                                        mayor, la pongo
+                                        a la derecha, si es menor a la izquierda. Luego tomo la tercera casilla y la
+                                        comparo con las
+                                        casillas que ya
+                                        ordene,
+                                        buscando su posición correspondiente, hasta tener todas en orden.
+                                    </p>
+                                    <img src="imagenes/Interseccion.gif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Ordenamiento por Inserción
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Se toma el dato que esta en la primera casilla y la comparo con la segunda
+                                        casilla: si es
+                                        mayor, la pongo
+                                        a la derecha, si es menor a la izquierda. Luego tomo la tercera casilla y la
+                                        comparo con las
+                                        casillas que ya
+                                        ordene,
+                                        buscando su posición correspondiente, hasta tener todas en orden.
+                                    </p>
+                                    <img src="imagenes/Interseccion.gif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Ordenamiento por Selección
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Este metodo tiene unos pasos especificos:
+                                        <li>Buscar el elemento mas pequeño de la lista.</li>
+                                        <li>Lo intercambias con el elemento que esta ubicado en la primera casilla de la
+                                            lista.</li>
+                                        <li>Buscamos el segundo elemento mas pequeño de la lista.</li>
+                                        <li>Lo intercambias con el elemento que esta ubicado en la segunda casilla de la
+                                            lista.</li>
+                                        <li>Y por ultimo, Se repite este proceso hasta tener completamente ordenada la
+                                            lista.</li>
+                                    </p>
+                                    <img src="imagenes/Seleccion.gif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Ordenamiento Shell
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Se van dando pasadas con el mismo salto hasta que en una pasada no se
+                                        intercambie ningún
+                                        elemento de sitio.
+                                        Entonces el salto se reduce a la mitad, y se vuelven a dar pasadas hasta que no
+                                        se
+                                        intercambie ningún
+                                        elemento,
+                                        y así sucesivamente hasta que el salto vale 1.
+                                    </p>
+                                    <img src="imagenes/Shell.gif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br><br>
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading"><strong>Estructuras de información</strong></h4>
+            <p>
+                <strong>Estructuras 402</strong><br>
+                Juan Sebastián Cardozo Pachón<br>
+                Brayan Stiven Cruz Aguilar<br>
+            </p>
+        </div>
 </body>
 
 </html>
